@@ -1,0 +1,63 @@
+/* authors.component.scss */
+
+/* Style for the "Get All Authors" button */
+.btn-new {
+  background-color: #007bff; /* Blue color */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.btn-new:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Style for the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background-color: #f8f9fa; /* Light gray background for header */
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #343a40; /* Dark background for header text */
+  color: white;
+}
+
+/* Alternate row background colors for better readability */
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Button styles within table cells */
+.btn-update, .btn-delete {
+  background-color: #28a745; /* Green color for update button */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-right: 4px;
+}
+
+.btn-delete {
+  background-color: #dc3545; /* Red color for delete button */
+}
+
+.btn-update:hover, .btn-delete:hover {
+  opacity: 0.8; /* Reduce opacity on hover */
+}

@@ -1,0 +1,22 @@
+<div class="add-new-author-level">
+  <h2>Add New Author</h2>
+  <form [formGroup]="postAuthorForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="name">Author Name:</label>
+      <input type="text" id="name" formControlName="name">
+    </div>
+
+    <div>
+      <label for="book">Book Name:</label>
+      <input type="text" id="book" formControlName="book">
+    </div>
+
+    <button type="submit" [disabled]="postAuthorForm.invalid">Add Author</button>
+    <div class="view-all-authors">
+      <button class="btn-new" routerLink="/home/get-all-author">View All Authors</button>
+    </div>
+    
+  </form>
+
+  
+</div>
